@@ -1,0 +1,5 @@
+1.	Initialize project directory with Vite
+	- installed React and Javascript
+2.	Initialize 'tailwind' import paths in vite.config.js
+3.	Added 'path' import and alias stuff
+
