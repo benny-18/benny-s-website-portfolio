@@ -2,4 +2,6 @@
 	- installed React and Javascript
 2.	Initialize 'tailwind' import paths in vite.config.js
 3.	Added 'path' import and alias stuff
+4. 	Deleted 'App.css' as we'll be doing our CSS stuff inside index.css
+5.	Define 'branding' (??) like colors fonts and stuff
 
