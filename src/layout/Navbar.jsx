@@ -58,7 +58,7 @@ export const Navbar = () => {
                                 <Eclipse />
                                 <Switch className="" />
                             </div>
-                        </DropdownMenuContent>
+                        </DropdownMenuContent> 
                     </DropdownMenu>
                 </button>
             </nav>

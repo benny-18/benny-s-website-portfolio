@@ -25,7 +25,7 @@ export const Hero = () => {
                         <div className="flex gap-3">
                             <Button className="font-space bg-teal-main">
                                 <Send />
-                                CONTACT NOW
+                                    Contact now
                             </Button>
                             <Button size="icon" className="bg-orange-main">
                                 <Instagram />
