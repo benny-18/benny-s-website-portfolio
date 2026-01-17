@@ -1,6 +1,7 @@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Button } from '@/components/ui/button'
-import { Menu } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
+import { Menu, Eclipse } from "lucide-react";
 
 const navigationLinks = [
     { label: 'Home', href: '#home' },
@@ -24,12 +25,17 @@ export const Navbar = () => {
                 </div>
 
                 {/* navbar links */}
-                <div>
+                <div className="flex flex-row gap-6 items-center">
                     {/* quick links */}
                     <div className="hidden md:flex gap-6">
                         {navigationLinks.map((link, index) => (
                             <a className="uppercase font-space font-black px-3 cursor-pointer hover:bg-red-400 hover:outline-2 outline-black rounded-lg p-2 block hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:active:shadow-none hover:translate-x-2px hover:translate-y-2px transition-all" href={link.href} key={index}>{link.label}</a>
                         ))}
+                    </div>
+
+                     <div className="items-center hidden md:flex gap-3">
+                        <Eclipse />
+                        <Switch className="bg-amber-700" />
                     </div>
                 </div>
 
@@ -37,17 +43,21 @@ export const Navbar = () => {
                 <button className="flex md:hidden">
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                            <Button size="icon">
+                            <Button className="bg-teal-main" size="icon">
                                 <Menu />
                             </Button>
                         </DropdownMenuTrigger>
 
-                        <DropdownMenuContent align="end" className="items-end mt-2">
+                        <DropdownMenuContent align="end" className="bg-teal-main flex flex-col md:hidden items-end py-1 pb-2 mt-3">
                             {navigationLinks.map((link, index) => (
                                 <DropdownMenuItem key={index} asChild>
-                                    <a className="uppercase font-space font-black cursor-pointer hover:bg-red-400 p-2 block" href={link.href}>{link.label}</a>
+                                    <a className="uppercase font-space font-black cursor-pointer bg-teal-main p-2 block" href={link.href}>{link.label}</a>
                                 </DropdownMenuItem>
                             ))}
+                            <div className="flex flex-row items-center gap-3 p-2 block">
+                                <Eclipse />
+                                <Switch className="" />
+                            </div>
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </button>

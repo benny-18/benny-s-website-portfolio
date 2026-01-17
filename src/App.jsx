@@ -6,7 +6,7 @@ import { Contact } from "@/sections/Contact";
 import { Footer } from "@/layout/Footer";
 
 function App() {
-  return <div className=" bg-grid min-h-screen overflow-x-hidden">
+  return <div className=" bg-grid min-h-dvh overflow-x-hidden">
     <Navbar />
     <main>
       <Hero />

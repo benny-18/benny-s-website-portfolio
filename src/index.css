@@ -12,38 +12,32 @@
   * {
     @apply border-border outline-ring/50;
   }
-  /* grid background for aesthetics */
   .bg-grid {
     background-size: 36px 36px;
     background-image:
-      linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+      linear-gradient(to right, rgba(0, 0, 0, 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.07) 1px, transparent 1px);
   }
-  html{
+  html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply text-foreground font-base bg-background;
+    @apply text-foreground font-dm bg-background;
   }
 
-  h1, h2, h3, h4, h5, h6{
+  h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
 }
 
-/* changes to variables for easier theming
-from neobrutalism.dev custom scheme styling */
-
-/* Warning
-Neobrutalism components doesn't support utility class
-components anymore, only css variables components. Also,
-it doesn't matter which baseColor you choose, because
-it doesn't change the styling. */
-
-/* ^ from neobrutalism.dev ^ */
-
 @theme inline {
+  --font-dm: "DM Sans", sans-serif;
+  --font-barlow: "Barlow Condensed", sans-serif;
+  --font-public: "Public Sans", sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
   --color-main: var(--main);
   --color-background: var(--background);
   --color-secondary-background: var(--secondary-background);
@@ -58,6 +52,20 @@ it doesn't change the styling. */
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
 
+  --color-yellow-main: #FACC00;
+  --color-yellow-bg: #FDF7C4;
+  --color-teal-main: #00D6BD;
+  --color-teal-bg: #CCFAF2;
+  --color-orange-main: #FF7A05;
+  --color-lime-main: #8AE500;
+  --color-white-warm: #F1F0EB;
+  --color-violet-main: #A985FF;
+  --color-fuschia-main: #E96BFF;
+  --color-sky-main: #0099FF;
+
+  --font-base: var(--font-dm);
+  --font-heading: var(--font-barlow);
+  
   --spacing-boxShadowX: 4px;
   --spacing-boxShadowY: 4px;
   --spacing-reverseBoxShadowX: -4px;
@@ -66,14 +74,21 @@ it doesn't change the styling. */
   --shadow-shadow: var(--shadow);
   --font-weight-base: 600;
   --font-weight-heading: 900;
+
+  --animate-spin-slow: spin 24s linear infinite;
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
 }
 
 :root {
-  --background: oklch(93.37% 0.0339 12.05);
+  --background: #F1F0EB; 
   --secondary-background: oklch(100% 0 0);
   --foreground: oklch(0% 0 0);
   --main-foreground: oklch(0% 0 0);
-  --main: oklch(70.79% 0.1862 16.25);
+  --main: #FACC00; 
   --border: oklch(0% 0 0);
   --ring: oklch(0% 0 0);
   --overlay: oklch(0% 0 0 / 0.8);
