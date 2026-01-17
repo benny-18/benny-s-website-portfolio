@@ -82,9 +82,9 @@ export const AboutMe = () => {
                             <Button className="basis-2/5 bg-fuschia-main w-full h-auto flex flex-col items-start justify-start whitespace-normal text-left gap-0">
                                 <p className="font-dm font-black text-lg">CREATIVE TOOLS</p>
                                 <p className="font-dm text-base">
-                                    Photoshop (Photos, layouts) <br />
-                                    Premiere Pro (Video editing) <br />
-                                    Figma (UI/UX design, proto) <br />
+                                    Photoshop (Layouts) <br />
+                                    Premiere Pro (Videos) <br />
+                                    Figma (UI/UX design) <br />
                                 </p>
                             </Button>
                         </div>
