@@ -7,6 +7,7 @@ const navigationLinks = [
     { label: 'Home', href: '#home' },
     { label: 'About Me', href: '#about' },
     { label: 'Skills & Projects', href: '#skills-projects' },
+    { label: 'Creative Vault', href: '#creative-vault' },
     { label: 'Contact', href: '#contact' },
 ];
 
@@ -27,7 +28,7 @@ export const Navbar = () => {
                 {/* navbar links */}
                 <div className="flex flex-row gap-6 items-center">
                     {/* quick links */}
-                    <div className="hidden md:flex gap-6">
+                    <div className="hidden md:flex gap-4">
                         {navigationLinks.map((link, index) => (
                             <a className="uppercase font-space font-black px-3 cursor-pointer hover:bg-red-400 hover:outline-2 outline-black rounded-lg p-2 block hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:active:shadow-none hover:translate-x-2px hover:translate-y-2px transition-all" href={link.href} key={index}>{link.label}</a>
                         ))}

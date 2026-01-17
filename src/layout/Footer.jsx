@@ -36,7 +36,11 @@ export const Footer = () => {
         </div>
 
         <div className="h-auto md:border-t-0 flex flex-col md:flex-row items-center justify-between px-10 p-12 gap-4">
-            <p className="text-center text-base font-space">© 2026 Marvin Masubay. All rights reserved.</p>
+            <div className="flex flex-col md:flex-row md:gap-1">
+                <p className="text-center text-base font-space">© 2026 Marvin Masubay.</p>
+                <p className="text-center text-base font-space">All rights reserved.</p>
+            </div>
+
             <p className="text-center text-base font-space">Built with<img className="inline-block relative -top-[2px] mx-1" src="https://simpleicons.org/icons/vite.svg" width="20"></img>Vite,<img className="inline-block relative -top-[2px] mx-1" src="https://simpleicons.org/icons/react.svg" width="20"></img>React, and<img className="inline-block relative -top-[2px] mx-1" src="https://simpleicons.org/icons/tailwindcss.svg" width="20"></img>Tailwind CSS.</p>
         </div>
     </section>
