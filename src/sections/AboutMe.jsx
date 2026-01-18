@@ -29,25 +29,24 @@ const items = [
 
 export const AboutMe = () => {
     return <section className="relative w-full overflow-x-hidden flex flex-col items-center">
-            
-            <div className="relative w-full">
-                <Marquee className="bg-fuschia-main h-20 font-heading font-light" items={items} />
+        <div className="relative w-full">
+            <Marquee className="bg-fuschia-main h-20 font-heading font-light" items={items} />
 
-                {/* Background Container */}
-                <div className="absolute inset-0 -z-10 h-full w-full pointer-events-none">
-                    
-                    <Star25 
-                        stroke="black" 
-                        strokeWidth="0.5" 
-                        className="absolute left-0 w-auto -translate-x-1/2 -translate-y-1/2 text-lime-main animate-spin-slow h-[65vh] top-[30%] md:top-1/2"
-                    />
+            {/* container for stars components ??*/}
+            <div className="absolute inset-0 -z-10 h-full w-full pointer-events-none">
+                
+                <Star25 
+                    stroke="black" 
+                    strokeWidth="0.5" 
+                    className="absolute left-0 w-auto -translate-x-1/2 -translate-y-1/2 text-lime-main animate-spin-slow h-[65vh] top-[30%] md:top-1/2"
+                />
 
-                    <Star22 
-                        stroke="black" 
-                        strokeWidth="0.5" 
-                        className="absolute right-0 w-auto translate-x-1/2 -translate-y-1/2 text-lime-main animate-spin-slow-reverse h-[50vh] top-[60%] md:top-1/2"
-                    />
-                </div>
+                <Star22 
+                    stroke="black" 
+                    strokeWidth="0.5" 
+                    className="absolute right-0 w-auto translate-x-1/2 -translate-y-1/2 text-lime-main animate-spin-slow-reverse h-[50vh] top-[60%] md:top-1/2"
+                />
+            </div>
 
             <div className="flex items-center justify-center p-10 md:p-20">
                 <div className="h-fit md:max-w-[50vw] flex flex-col items-center justify-center">
