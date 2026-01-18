@@ -15,7 +15,7 @@ export const Navbar = () => {
     return (
         <header className="fixed top-0 left-0 right-0 py-8 px-8 md:py-16 md:px-16 z-50">
             
-            <div className="absolute inset-0 -z-10 backdrop-blur-xl [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] bg-background/10"></div>
+            <div className="absolute inset-0 -z-10 backdrop-blur-xl [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)] bg-background/10"></div>
 
             <nav className="container mx-auto flex items-center justify-between">
 
@@ -54,7 +54,7 @@ export const Navbar = () => {
                                     <a className="uppercase font-space font-black cursor-pointer bg-teal-main p-2 block" href={link.href}>{link.label}</a>
                                 </DropdownMenuItem>
                             ))}
-                            <div className="flex flex-row items-center gap-3 p-2 block">
+                            <div className="flex flex-row items-center gap-3 p-2">
                                 <Eclipse />
                                 <Switch className="" />
                             </div>

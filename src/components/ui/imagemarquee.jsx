@@ -38,7 +38,7 @@ export default function ImageMarquee({
                 vertical ? "w-full" : "w-auto"
             )}
             style={{ 
-                height: vertical ? "auto" : "200px", 
+                height: vertical ? "auto" : "180px", 
             }}
             >
             <img 

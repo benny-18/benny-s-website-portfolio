@@ -15,10 +15,10 @@ export const Hero = () => {
                 
                 <div className="relative z-10 flex flex-col-reverse md:flex-row items-center gap-4 w-full">
                     <div className="basis-1/2 flex flex-col md:max-w-[50vw] items-center md:items-start justify-center">
-                        <Badge className="hidden md:block text-sm uppercase font-space mt-2 mb-2 bg-orange-main">Available for OJT / Junior Roles</Badge>
+                        <Badge className="hidden md:block text-base uppercase font-space mt-2 mb-2 bg-orange-main">Available for OJT / Junior Roles</Badge>
                         <div className="flex flex-row md:flex-col items-center md:items-start gap-2 md:gap-0 pb-2 md:pb-4">
-                            <h1 className="text-6xl md:text-9xl font-black font-barlow uppercase leading-none tracking-tight">MARVIN</h1>
-                            <h1 className="text-6xl md:text-9xl font-black font-barlow uppercase leading-none tracking-tight">MASUBAY</h1>
+                            <h1 className="text-6xl md:text-[9rem] font-black font-barlow uppercase leading-none tracking-tight">MARVIN</h1>
+                            <h1 className="text-6xl md:text-[9rem] font-black font-barlow uppercase leading-none tracking-tight">MASUBAY</h1>
                         </div>
                         <p className="text-base md:text-xl text-center md:max-w-[30vw] font-space md:text-start font-normal mb-4 md:mb-6">A graduating IT student, and a developer-in-progress who likes to develop solutions through code and creativity!</p>
                         
@@ -39,7 +39,7 @@ export const Hero = () => {
                         </div>
 
                         <div className="pt-5 md:pt-8">
-                            <a className="font-space font-extrabold text-lg">↓ SCROLL DOWN ↓</a>
+                            <a className="font-space font-extrabold text-lg md:text-xl">↓ SCROLL DOWN ↓</a>
                         </div>
                     </div>
 

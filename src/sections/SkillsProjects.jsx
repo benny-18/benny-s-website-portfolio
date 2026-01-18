@@ -36,7 +36,7 @@ export const SkillsProjects = () => {
     return <section className="w-screen flex flex-col items-center">
         <Marquee className="bg-yellow-main h-20 font-heading font-light" items={items} />
 
-        <div className="pt-10 mb-20 md:pt-20 max-w-[80vw] md:max-w-[30vw]">
+        <div className="pt-10 mb-20 md:pt-20 max-w-[80vw] md:max-w-[40vw]">
             <div className="h-auto flex flex-col items-start justify-start">
                 <h1 className="text-5xl md:text-7xl font-extrabold font-barlow uppercase leading-none pb-4">PROJECT<br/>HIGHLIGHTS</h1>
                 <a className="text-base md:text-xl text-start font-space font-normal pb-8">

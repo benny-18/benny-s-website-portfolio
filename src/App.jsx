@@ -6,34 +6,39 @@ import { Contact } from "@/sections/Contact";
 import { Footer } from "@/layout/Footer";
 import { CreativeVault } from "@/sections/CreativeProjects";
 import { Analytics } from "@vercel/analytics/react"
+import SmoothScroll from "./components/SmoothScroll";
 
 function App() {
-  return <div className="bg-grid min-h-dvh overflow-x-hidden">
-    <Navbar className="fixed x-10" />
-    <main>
-      <section id="home">
-        <Hero />
-      </section>
+  return (
+    <SmoothScroll>
+      <div className="bg-grid min-h-dvh overflow-x-hidden">
+        <Navbar className="fixed x-10" />
+        <main>
+          <section id="home">
+            <Hero />
+          </section>
 
-      <section id="about">
-        <AboutMe />
-      </section>
+          <section id="about">
+            <AboutMe />
+          </section>
 
-      <section id="skills-projects">
-        <SkillsProjects /> 
-      </section>
+          <section id="skills-projects">
+            <SkillsProjects /> 
+          </section>
 
-      <section id="creative-vault">
-        <CreativeVault />
-      </section>
-      
-      <section id="contact">
-        <Contact />
-      </section>
+          <section id="creative-vault">
+            <CreativeVault />
+          </section>
+          
+          <section id="contact">
+            <Contact />
+          </section>
 
-      <Footer />
-    </main>
-  </div>;
+          <Footer />
+        </main>
+      </div>;
+    </SmoothScroll>
+  );
 }
 
 export default App;
