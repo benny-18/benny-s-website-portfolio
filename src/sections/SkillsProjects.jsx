@@ -7,6 +7,7 @@ import { Send, Github } from "lucide-react";
 import petify from "@/assets/coding-projects-screenshots/petify.png";
 import campuswise from "@/assets/coding-projects-screenshots/campuswise.png";
 import dirtx from "@/assets/coding-projects-screenshots/dirtx-ui.png";
+import ImageMarquee from "@/components/ui/imagemarquee";
 
 const items = [
     'SKILLS & PROJECTS',
@@ -35,15 +36,15 @@ export const SkillsProjects = () => {
     return <section className="w-screen flex flex-col items-center">
         <Marquee className="bg-yellow-main h-20 font-heading font-light" items={items} />
 
-        <div className="p-10 md:p-20">
-            <div className="h-fit md:max-w-[40vw] flex flex-col items-start justify-center">
+        <div className="pt-10 mb-20 md:pt-20 max-w-[80vw] md:max-w-[30vw]">
+            <div className="h-auto flex flex-col items-start justify-start">
                 <h1 className="text-5xl md:text-7xl font-extrabold font-barlow uppercase leading-none pb-4">PROJECT<br/>HIGHLIGHTS</h1>
                 <a className="text-base md:text-xl text-start font-space font-normal pb-8">
                     Key works from my undergraduate years
                 </a>
 
-                <div className="relative before:absolute before:left-20 before:top-0 before:z-[-1] before:h-full before:w-[2px] before:bg-black before:content-['']">
-                     <div className="flex flex-col gap-12">
+                <div className="relative before:absolute before:left-15 before:top-0 before:z-[-1] before:h-full before:w-[2px] before:bg-black before:content-['']">
+                     <div className="flex flex-col gap-10">
 
                         <Button className="bg-yellow-main w-full h-auto flex flex-col items-start justify-start whitespace-normal text-left gap-0">
                             <p className="font-dm text-base">
@@ -142,14 +143,14 @@ export const SkillsProjects = () => {
                             </p>
                         </Button>
 
-                        <Button className="bg-violet-main w-full h-16 flex flex-col items-center justify-center whitespace-normal text-left gap-0">
+                        {/* <Button className="bg-violet-main w-full h-16 flex flex-col items-center justify-center whitespace-normal text-left gap-0">
                             <p className="font-space text-xl font-bold">EXPLORE MY CREATIVE VAULT</p>
-                        </Button>
-
+                        </Button> */}
                     </div>
                 </div>
-
             </div>
+
+                                    
         </div>
     </section>
 };

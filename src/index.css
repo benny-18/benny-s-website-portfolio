@@ -12,12 +12,22 @@
   * {
     @apply border-border outline-ring/50;
   }
-  .bg-grid {
+
+  /* dotted uwu */
+  .bg-dotted {
+    border-top:solid 1px rgba(0,0,0,0.15);
+    background-image: radial-gradient(rgba(0,0,0,0.15) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  /* grid rawrr */
+   .bg-grid {
     background-size: 36px 36px;
     background-image:
       linear-gradient(to right, rgba(0, 0, 0, 0.07) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(0,0,0,0.07) 1px, transparent 1px);
   }
+
   html {
     scroll-behavior: smooth;
   }
@@ -52,6 +62,7 @@
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
 
+  /* neobrutalism.dev colors */
   --color-yellow-main: #FACC00;
   --color-yellow-bg: #FDF7C4;
   --color-teal-main: #00D6BD;
@@ -138,4 +149,26 @@
   --chart-4: #00BD84;
   --chart-5: #5294FF;
   --chart-active-dot: #fff;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes scroll-y {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+.animate-scroll {
+  animation-name: scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.animate-scroll-y {
+  animation-name: scroll-y;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }

@@ -31,7 +31,7 @@ export const AboutMe = () => {
 
         <div className="p-10 md:p-20">
             <div className="h-fit md:max-w-[50vw] flex flex-col items-start justify-center">
-                <h1 className="text-5xl md:text-7xl font-extrabold font-barlow uppercase leading-none pb-4">ABOUT THE DEV</h1>
+                <h1 className="text-5xl md:text-7xl font-extrabold font-barlow uppercase leading-none tracking-tight pb-4">ABOUT THE DEV</h1>
                 <a className="text-base md:text-xl text-start font-space font-normal pb-4">
                     Specializing in robust cross-platform applications with Flutter, now expanding into full-stack web architecture using React and Vite. Below is a snapshot of my technical toolkit, academic background, and development philosophy.
                 </a>
