@@ -29,6 +29,7 @@ export default function ImageMarquee({
     >
       {items.map((src, index) => (
         <Button 
+            variant="reverse"
             key={index}
             className="h-fit w-fit bg-transparent overflow-hidden p-0 m-2 whitespace-nowrap"
         >

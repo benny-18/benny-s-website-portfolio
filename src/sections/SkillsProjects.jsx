@@ -63,8 +63,10 @@ export const SkillsProjects = () => {
                                 <span className="font-bold">LNU-IGP SISMS (Income-Generating Park Stalls Inventory & Sales Management System)</span> is a centralized management platform for the Leyte Normal University Trade Park designed to oversee products, stalls, and sales performance. The application facilitates secure user sessions for admins and owners, offering robust tools for stall profile customization and product lifecycle management.
                             </p>
                             <Button className="flex font-space bg-yellow-main mb-4">
-                                <Github />
-                                Repository
+                                <a href="https://github.com/benny-18/IGP-SISMS" target="_blank" rel="noopener noreferral" className="flex flex-row items-center gap-1">
+                                    <Github />
+                                    Visit repository
+                                </a>
                             </Button>
                         </Button>
 
@@ -86,8 +88,10 @@ export const SkillsProjects = () => {
                                 <span className="font-bold">Petify</span> is a Laravel web application that allows users to create, edit, and export professional lost & found pet posters using a variety of templates. It features a live preview powered by Livewire, automatic thumbnail generation, and export to PNG or PDF.
                             </p>
                             <Button className="flex font-space bg-yellow-main mb-4">
-                                <Github />
-                                Repository
+                                <a href="https://github.com/benny-18/Petify" target="_blank" rel="noopener noreferral" className="flex flex-row items-center gap-1">
+                                    <Github />
+                                    Visit repository
+                                </a>
                             </Button>
                         </Button>
 
@@ -109,8 +113,10 @@ export const SkillsProjects = () => {
                                 <span className="font-bold">LNU Campuswise</span> is a chatbot-based Student Manual system for undergraduate students of Leyte Normal University, which uses Retrieval-Augmented Generation (RAG) with Meta&apos;s llama3.2 and LangChain to answer questions from the handbook via a web interface.
                             </p>
                             <Button className="flex font-space bg-yellow-main mb-4">
-                                <Github />
-                                Repository
+                                <a href="https://github.com/benny-18/CampusWise" target="_blank" rel="noopener noreferral" className="flex flex-row items-center gap-1">
+                                    <Github />
+                                    Visit repository
+                                </a>
                             </Button>
                         </Button>
 
@@ -126,8 +132,10 @@ export const SkillsProjects = () => {
                                 <span className="font-bold">DIRTX</span> is a Flutter application that assists early detection of harmful  algal blooms (red tide) by analyzing drone images and pre-recorded images and videos using machine learning and computer-vision workflows. The app is a decision-support tool for authorized marine biologists and  environmental agencies to visualize and review possible red tide clusters.
                             </p>
                             <Button className="flex font-space bg-yellow-main mb-4">
-                                <Github />
-                                Repository
+                                <a href="https://github.com/benny-18/DIRTX" target="_blank" rel="noopener noreferral" className="flex flex-row items-center gap-1">
+                                    <Github />
+                                    Visit repository
+                                </a>
                             </Button>
                         </Button>
 

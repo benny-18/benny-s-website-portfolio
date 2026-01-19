@@ -10,36 +10,42 @@ export const Hero = () => {
         <section className="min-h-screen flex items-center justify-center max-w-7xl mx-auto px-4">
             <div className="relative w-full">
                 <div className="absolute inset-0 z-0 flex items-start pointer-events-none -mx-36 md:mx-0">
-                    <Star20 stroke="black" strokeWidth="0.5" className="w-full h-full text-teal-main animate-spin-slow mr-30" />
+                    <Star20 stroke="black" strokeWidth="0.5" className="w-full h-full text-teal-main animate-spin-slow mr-40" />
                 </div>
                 
                 <div className="relative z-10 flex flex-col-reverse md:flex-row items-center gap-4 w-full">
                     <div className="basis-1/2 flex flex-col md:max-w-[50vw] items-center md:items-start justify-center">
                         <Badge className="hidden md:block text-base uppercase font-space mt-2 mb-2 bg-orange-main">Available for OJT / Junior Roles</Badge>
-                        <div className="flex flex-row md:flex-col items-center md:items-start gap-2 md:gap-0 pb-2 md:pb-4">
-                            <h1 className="text-6xl md:text-[9rem] font-black font-barlow uppercase leading-none tracking-tight">MARVIN</h1>
-                            <h1 className="text-6xl md:text-[9rem] font-black font-barlow uppercase leading-none tracking-tight">MASUBAY</h1>
+                        <div className="flex flex-row md:flex-col gap-2 items-center md:items-start md:gap-0 pb-2 md:pb-4">
+                            <h1 className="text-6xl md:text-[10rem] font-black font-barlow uppercase leading-none tracking-tight">MARVIN</h1>
+                            <h1 className="text-6xl md:text-[10rem] font-black font-barlow uppercase leading-none tracking-tight">MASUBAY</h1>
                         </div>
                         <p className="text-base md:text-xl text-center md:max-w-[30vw] font-space md:text-start font-normal mb-4 md:mb-6">A graduating IT student, and a developer-in-progress who likes to develop solutions through code and creativity!</p>
                         
-                        <div className="flex gap-3">
-                            <Button className="font-space bg-teal-main">
-                                <Send />
+                        <div className="flex gap-4">
+                            <Button asChild={true} className="font-space text-base uppercase bg-teal-main">
+                                <a href="#contact">
+                                    <Send />
                                     Contact now
+                                </a>
                             </Button>
-                            <Button size="icon" className="bg-orange-main">
+                            {/* <Button size="icon" className="bg-orange-main">
                                 <Instagram />
+                            </Button> */}
+                            <Button size="icon" className="bg-orange-main">
+                                <a href="https://github.com/benny-18/" target="_blank" rel="noopener noreferrer">
+                                    <Github />
+                                </a>
                             </Button>
                             <Button size="icon" className="bg-orange-main">
-                                <Github />
-                            </Button>
-                            <Button size="icon" className="bg-orange-main">
-                                <Linkedin />
+                                <a href="https://www.linkedin.com/in/marvin-masubay-a62407252/" target="_blank" rel="noopener noreferrer">
+                                    <Linkedin />
+                                </a>
                             </Button>
                         </div>
 
                         <div className="pt-5 md:pt-8">
-                            <a className="font-space font-extrabold text-lg md:text-xl">↓ SCROLL DOWN ↓</a>
+                            <a className="font-space font-normal text-lg md:text-xl">↓ SCROLL DOWN ↓</a>
                         </div>
                     </div>
 

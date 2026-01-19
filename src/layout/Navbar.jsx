@@ -28,9 +28,9 @@ export const Navbar = () => {
                 </div>
 
                 <div className="flex flex-row gap-6 items-center">
-                    <div className="hidden md:flex gap-4">
+                    <div className="hidden md:flex gap-3">
                         {navigationLinks.map((link, index) => (
-                            <a className="uppercase font-space font-black px-3 cursor-pointer hover:bg-red-400 hover:outline-2 outline-black rounded-lg p-2 block hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:active:shadow-none hover:translate-x-2px hover:translate-y-2px transition-all" href={link.href} key={index}>{link.label}</a>
+                            <a className="uppercase font-space font-black px-3 cursor-pointer hover:bg-orange-main hover:outline-2 outline-black rounded-base p-2 block hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] active:shadow-none hover:translate-x-2px hover:translate-y-2px transition-all" href={link.href} key={index}>{link.label}</a>
                         ))}
                     </div>
 

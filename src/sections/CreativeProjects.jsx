@@ -1,5 +1,6 @@
 import ImageMarquee from "@/components/ui/imagemarquee";
-import { PencilRuler } from "lucide-react";
+import { Button } from '@/components/ui/button';
+import { PencilRuler, Link, Instagram } from "lucide-react";
 
 import creativework_001 from "@/assets/creative-projects/benny-portfolio-creativework-001.webp";
 import creativework_002 from "@/assets/creative-projects/benny-portfolio-creativework-002.webp";
@@ -60,8 +61,8 @@ const creativeWorksMobileSecondRow = [
 ];
 
 export const CreativeVault = () => {
-    return <section className="h-auto md:h-auto pt-20 flex bg-dotted bg-background items-start justify-center">
-        <div className="flex flex-col items-center justify-center">
+    return <section className="h-auto md:h-auto pt-16 flex bg-dotted bg-background items-start justify-center inset-shadow-sm">
+        <div className="flex flex-col items-center justify-end">
             <PencilRuler size={38}/>
             <h1 className="text-5xl md:text-7xl font-extrabold font-barlow uppercase leading-none pt-4 pb-4">CREATIVE VAULT</h1>
             <a className="text-base md:text-xl text-center font-space font-normal max-w-[70vw] pb-8 md:pb-0">
@@ -69,7 +70,7 @@ export const CreativeVault = () => {
             </a>
 
             {/* creative vault mobile uwu */}
-            <div className="flex flex-row h-[80vh] pb-0 md:pb-10 md:hidden gap-0 mx-6">
+            <div className="flex flex-row h-[125vh] pb-0 md:pb-10 md:hidden gap-2 mx-3">
                 <ImageMarquee 
                     items={creativeWorksMobileFirstRow} 
                     speed="40s" 
@@ -87,7 +88,7 @@ export const CreativeVault = () => {
             </div>
 
             {/* creative vault for desktop */}
-            <div className="hidden pb-10 md:pb-20 pt-10 md:block overflow-hidden">
+            <div className="hidden pb-10 md:pb-10 pt-10 md:block overflow-hidden">
                 <ImageMarquee 
                     className="pb-2"
                     items={creativeWorksFirstRow} 
@@ -104,7 +105,25 @@ export const CreativeVault = () => {
                     items={creativeWorksThirdRow} 
                     speed="50s" 
                 />
+
+                <div className="w-full flex items-center justify-center pt-10">
+                    <Button asChild={true} variant="reverse" className="mb-10 text-base uppercase bg-background">
+                        <a href="https://www.instagram.com/marbinezkii/" target="_blank" rel="noopener noreferral" className="items-center font-public justify-center">
+                            <Instagram />
+                            View Instagram account
+                        </a>
+                    </Button>
+                </div>
             </div>
+
+            {/* instagram button if mobile */}
+            <Button asChild={true} variant="reverse" className="absolute md:hidden mb-16 text-base uppercase bg-background">
+                <a href="https://www.instagram.com/marbinezkii/" target="_blank" rel="noopener noreferral" className="items-center font-public justify-center">
+                    <Instagram />
+                    View Instagram account
+                </a>
+            </Button>
+
         </div>
     </section>
 }

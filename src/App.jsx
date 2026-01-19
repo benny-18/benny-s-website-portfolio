@@ -10,10 +10,10 @@ import SmoothScroll from "./components/SmoothScroll";
 
 function App() {
   return (
-    <SmoothScroll>
-      <div className="bg-grid min-h-dvh overflow-x-hidden">
+    <div className="bg-grid min-h-dvh overflow-x-hidden">
         <Navbar className="fixed x-10" />
-        <main>
+        <SmoothScroll>
+          <main>
           <section id="home">
             <Hero />
           </section>
@@ -36,8 +36,8 @@ function App() {
 
           <Footer />
         </main>
-      </div>;
-    </SmoothScroll>
+        </SmoothScroll>
+      </div>
   );
 }
 
