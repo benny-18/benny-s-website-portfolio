@@ -5,10 +5,12 @@ import { Badge } from "@/components/ui/badge"
 import Star20 from "@/components/stars/s20";
 import { Send, Instagram, Github, Linkedin } from "lucide-react";
 
+
 export const Hero = () => {
     return (
         <section className="min-h-screen flex items-center justify-center max-w-7xl mx-auto px-4">
             <div className="relative w-full">
+                
                 <div className="absolute inset-0 z-0 flex items-start pointer-events-none -mx-36 md:mx-0">
                     <Star20 stroke="black" strokeWidth="0.5" className="w-full h-full text-teal-main animate-spin-slow mr-40" />
                 </div>

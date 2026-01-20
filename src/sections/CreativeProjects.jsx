@@ -42,22 +42,42 @@ import creativework_037 from "@/assets/creative-projects/benny-portfolio-creativ
 import creativework_038 from "@/assets/creative-projects/benny-portfolio-creativework-038.webp";
 import creativework_039 from "@/assets/creative-projects/benny-portfolio-creativework-039.webp";
 import creativework_040 from "@/assets/creative-projects/benny-portfolio-creativework-040.webp";
+import creativework_041 from "@/assets/creative-projects/benny-portfolio-creativework-041.webp";
+import creativework_042 from "@/assets/creative-projects/benny-portfolio-creativework-042.webp";
+import creativework_043 from "@/assets/creative-projects/benny-portfolio-creativework-043.webp";
+import creativework_044 from "@/assets/creative-projects/benny-portfolio-creativework-044.webp";
+import creativework_045 from "@/assets/creative-projects/benny-portfolio-creativework-045.webp";
+import creativework_046 from "@/assets/creative-projects/benny-portfolio-creativework-046.webp";
+import creativework_047 from "@/assets/creative-projects/benny-portfolio-creativework-047.webp";
+import creativework_048 from "@/assets/creative-projects/benny-portfolio-creativework-048.webp";
+import creativework_049 from "@/assets/creative-projects/benny-portfolio-creativework-049.webp";
+import creativework_050 from "@/assets/creative-projects/benny-portfolio-creativework-050.webp";
+
 
 const creativeWorksFirstRow = [
-  creativework_021, creativework_024, creativework_027, creativework_031, creativework_034, creativework_037, creativework_040, creativework_002, creativework_004, creativework_007, creativework_010, creativework_015, creativework_018
+  creativework_047, creativework_021, creativework_024, creativework_027, creativework_041, creativework_031, creativework_034, creativework_037, creativework_040, creativework_002, creativework_004, creativework_007, creativework_044, creativework_010, creativework_015, creativework_018
 ];
 const creativeWorksSecondRow = [
-  creativework_022, creativework_026, creativework_029, creativework_032, creativework_036, creativework_039, creativework_003, creativework_005, creativework_008, creativework_012, creativework_014, creativework_017, creativework_020,
+  creativework_022, creativework_026, creativework_029, creativework_032, creativework_050, creativework_036, creativework_039, creativework_048, creativework_003, creativework_005, creativework_008, creativework_045, creativework_012, creativework_042, creativework_014, creativework_017, creativework_020,
 ];
 const creativeWorksThirdRow = [
-  creativework_023, creativework_001, creativework_028, creativework_030, creativework_033, creativework_035, creativework_019, creativework_038, creativework_025, creativework_006, creativework_009, creativework_013, creativework_016,
+  creativework_023, creativework_001, creativework_028, creativework_043, creativework_030, creativework_033, creativework_035, creativework_019, creativework_049, creativework_038, creativework_025, creativework_006, creativework_009, creativework_046, creativework_013, creativework_016,
 ];
 
 const creativeWorksMobileFirstRow = [
-  creativework_021, creativework_024, creativework_027, creativework_031, creativework_034, creativework_037, creativework_040, creativework_002, creativework_004, creativework_007, creativework_010, creativework_015, creativework_018, creativework_023, creativework_001, creativework_028, creativework_030, creativework_033, creativework_035, creativework_019,
+  creativework_021, creativework_024, creativework_041, creativework_027, creativework_031, 
+  creativework_034, creativework_037, creativework_043, creativework_040, creativework_002, 
+  creativework_004, creativework_007, creativework_045, creativework_010, creativework_015, 
+  creativework_018, creativework_023, creativework_047, creativework_001, creativework_028, 
+  creativework_030, creativework_033, creativework_049, creativework_035, creativework_019
 ];
+
 const creativeWorksMobileSecondRow = [
-  creativework_022, creativework_026, creativework_029, creativework_032, creativework_036, creativework_039, creativework_003, creativework_005, creativework_008, creativework_012, creativework_014, creativework_017, creativework_020, creativework_038, creativework_025, creativework_006, creativework_009, creativework_013, creativework_016, creativework_011
+  creativework_022, creativework_026, creativework_042, creativework_029, creativework_032, 
+  creativework_036, creativework_039, creativework_044, creativework_003, creativework_005, 
+  creativework_008, creativework_012, creativework_046, creativework_014, creativework_017, 
+  creativework_020, creativework_038, creativework_048, creativework_025, creativework_006, 
+  creativework_009, creativework_013, creativework_050, creativework_016, creativework_011
 ];
 
 export const CreativeVault = () => {

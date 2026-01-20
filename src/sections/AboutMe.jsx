@@ -28,12 +28,12 @@ const items = [
 ];
 
 export const AboutMe = () => {
-    return <section className="relative w-full overflow-x-hidden flex flex-col items-center">
+    return <section className="relative bg-dotted bg-background w-full overflow-x-hidden flex flex-col items-center">
         <div className="relative w-full">
             <Marquee className="bg-fuschia-main h-20 font-heading font-light" items={items} />
 
             {/* container for stars components ??*/}
-            <div className="absolute inset-0 -z-10 h-full w-full pointer-events-none">
+            <div className="absolute inset-0 z-0 h-full w-full pointer-events-none">
                 
                 <Star25 
                     stroke="black" 
@@ -51,26 +51,26 @@ export const AboutMe = () => {
             <div className="flex items-center justify-center p-10 md:p-20">
                 <div className="h-fit max-w-[80vw] md:max-w-[50vw] flex flex-col items-center justify-center">
                     <h1 className="text-5xl md:text-7xl font-extrabold font-barlow uppercase leading-none tracking-tight pb-4">ABOUT THE DEV</h1>
-                    <a className="text-base md:text-xl text-center font-space font-normal md:px-16 pb-6">
+                    <a className="text-base relative z-10 md:text-xl text-center font-space font-normal md:px-16 pb-6">
                         Specializing in robust cross-platform applications with Flutter, now expanding into full-stack web architecture using React and Vite. Below is a snapshot of my technical toolkit, academic background, and development philosophy.
                     </a>
 
                     <div className="relative flex flex-col md:flex-row gap-6 pb-6">
-                        <Button className="basis-3/7 bg-fuschia-main w-full h-auto flex flex-col items-start justify-start whitespace-normal text-left gap-0">
+                        <Button className="basis-3/7 bg-fuschia-main w-full h-auto flex flex-col items-start justify-between whitespace-normal text-left gap-0">
                             <p className="font-dm font-black text-lg">ABOUT ME</p>
                             <p className="font-dm text-base">
                                 I am Marvin. I am passionate about exploring cross-platform development and modern front-end web design.
                             </p>
                         </Button>
 
-                        <Button className="basis-2/7 w-full bg-yellow-main h-auto flex flex-col items-start justify-start whitespace-normal text-left gap-0">
+                        <Button className="basis-2/7 w-full bg-yellow-main h-auto flex flex-col items-start justify-between whitespace-normal text-left gap-0">
                             <p className="font-dm font-black text-lg">EDUCATION</p>
                             <p className="font-dm text-base">
                                 BS Information Technology @ Leyte Normal University. Class of 2026.
                             </p>
                         </Button>
 
-                        <Button className="basis-2/7  bg-lime-main w-full h-auto flex flex-col items-start justify-start whitespace-normal text-left gap-0">
+                        <Button className="basis-2/7  bg-lime-main w-full h-auto flex flex-col items-start justify-between whitespace-normal text-left gap-0">
                             <p className="font-dm font-black text-lg">LOCATION</p>
                             <p className="font-dm text-base">
                                 Based in Tacloban City, Philippines 🇵🇭 Currently open for OJT / Junior roles
@@ -98,7 +98,7 @@ export const AboutMe = () => {
                                     </p>
                                 </Button>
                                     
-                                <Button className="basis-2/5 bg-fuschia-main w-full h-full flex flex-col items-start justify-start whitespace-normal text-left gap-0">
+                                <Button className="basis-2/5 bg-fuschia-main w-full h-full flex flex-col items-start justify-between whitespace-normal text-left gap-0">
                                     <p className="font-dm font-black text-lg">CREATIVE TOOLS</p>
                                     <p className="font-dm text-base">
                                         Photoshop (Layouts) <br />
@@ -109,14 +109,14 @@ export const AboutMe = () => {
                             </div>
 
                             <div className="basis-3/5 w-full h-full items-start justify-between whitespace-normal text-left flex flex-col md:flex-row gap-6">
-                                <Button className="basis-2/5 w-full bg-rose-main h-auto flex flex-col items-start justify-start whitespace-normal text-left gap-0">
+                                <Button className="basis-2/5 w-full bg-rose-main h-auto flex flex-col items-start justify-between whitespace-normal text-left gap-0">
                                     <p className="font-dm font-black text-lg">TECH STACK</p>
                                     <p className="font-dm text-base">
                                         HTML/CSS, JavaScript (ES6+), Dart, Flutter, React, Laravel, Tailwind CSS, Git, Figma
                                     </p>
                                 </Button>
 
-                                <Button className="basis-3/5 w-full h-full bg-sky-main flex flex-col items-start justify-start whitespace-normal text-left gap-0">
+                                <Button className="basis-3/5 w-full h-full bg-sky-main flex flex-col items-start justify-between whitespace-normal text-left gap-0">
                                     <p className="font-dm font-black text-lg">CURRENT FOCUS</p>
                                     <p className="font-dm text-base">
                                         Deep diving into the Vite, React, and Tailwind CSS ecosystem to build a full-stack personal website portfolio.

@@ -3,6 +3,8 @@ import Star8 from "@/components/stars/s8";
 import Star15 from "@/components/stars/s15";
 import Star32 from "@/components/stars/s32";
 
+import { EmailComponent } from "@/components/EmailComponent";
+
 import { Send, Instagram, Github, Linkedin, Copy } from "lucide-react";
 
 
@@ -124,19 +126,23 @@ export const Contact = () => {
                                     </div>
                                 </form>
                             </CardContent>
-                            <CardFooter className="flex-col gap-2">
+                            <CardFooter className="flex flex-col items-start gap-2">
                                 <Button type="submit" className="w-full font-space font-black">
                                 LET'S CONNECT
                                 </Button>
 
-                                <div className="flex flex-col items-center pt-3">
+                                <div className="flex flex-col items-start pt-3">
                                     <p className="text-sm">
-                                        Or send email directly at
+                                        Or you may send an email directly to
                                     </p>
 
-                                        <a className="underline text-base">
+                                    {/* <a className="underline text-sm font-public gap-2 flex flex-row leading-none items-center">
                                         marvin.masubay.042005@gmail.com
-                                    </a>
+                                        <Copy size="16" />
+                                    </a> */}
+
+                                    <EmailComponent />
+
                                 </div>
 
                             </CardFooter>
