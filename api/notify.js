@@ -37,19 +37,19 @@ export default async function handler(req, res) {
       embeds: [
         {
           author: {
-            name: "Portfolio Visitor Detected",
-            icon_url: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            name: "Visitor Analytics Report",
+            icon_url: "https://img.icons8.com/?size=100&id=XYUBfGv9SXGR&format=png&color=FFFFFF"
           },
-          title: "Visitor Analytics Report",
+          title: "Portfolio visitor detected!",
           description: `A new user has landed on ${(!currentPath || currentPath === '/') ? 'the homepage' : `\`${currentPath}\``}.`,
           color: 0x5865F2,
           thumbnail: {
-            url: "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            url: "https://img.icons8.com/?size=100&id=85146&format=png&color=FFFFFF"
           },
           fields: [
             {
               name: 'Device',
-              value: `\`${fullDevice}\` (${deviceType})`,
+              value: `\`${fullDevice}\` | (${deviceType})`,
               inline: true,
             },
             {
@@ -78,11 +78,6 @@ export default async function handler(req, res) {
               inline: false,
             }
           ],
-          timestamp: new Date().toISOString(),
-          footer: {
-            text: 'System Notification • Benny\'s Portfolio',
-            icon_url: 'https://cdn-icons-png.flaticon.com/512/888/888879.png'
-          },
         },
       ],
     };

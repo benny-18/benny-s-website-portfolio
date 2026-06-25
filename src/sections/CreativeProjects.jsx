@@ -116,7 +116,7 @@ export const CreativeVault = () => {
             )}
         </AnimatePresence>
 
-        <div className="flex flex-col items-center justify-end">
+        <div className="flex flex-col items-center justify-end pt-2">
             <PencilRuler size={38}/>
             <h1 className="text-5xl md:text-7xl font-extrabold font-barlow uppercase leading-none pt-4 pb-4">CREATIVE VAULT</h1>
             <a className="text-base md:text-xl text-center font-space font-normal max-w-[70vw] pb-8 md:pb-0">
