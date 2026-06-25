@@ -13,8 +13,10 @@ export const useVisitorTracker = () => {
 
         const payload = {
           time,
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
           userAgent: navigator.userAgent,
           referrer: document.referrer || 'Direct / None',
+          currentPath: window.location.pathname,
           language: navigator.language || 'Unknown',
           screenResolution: `${window.innerWidth}x${window.innerHeight}`,
         };
