@@ -47,7 +47,7 @@ export const Hero = () => {
                         </div>
 
                         <div className="pt-5 md:pt-8">
-                            <a className="font-space font-normal text-lg md:text-xl">↓ SCROLL DOWN ↓</a>
+                            <a className="font-space font-normal text-base md:text-xl">↓ SCROLL DOWN ↓</a>
                         </div>
                     </div>
 

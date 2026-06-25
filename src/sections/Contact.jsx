@@ -109,19 +109,19 @@ export const Contact = () => {
                                     <div className="flex flex-col gap-4">
                                         <div className="grid gap-2">
                                             <Label className="font-dm font-bold" htmlFor="name">Name</Label>
-                                            <Input id="name" type="name" placeholder="Marvin Masubay" required />
+                                            <Input id="name" type="name" placeholder="Your name" required />
                                         </div>
 
                                         <div className="grid gap-2">
                                             <Label className="font-dm font-bold" htmlFor="email">Email address</Label>
-                                            <Input id="email" type="email" placeholder="marvin@gmail.com" required />
+                                            <Input id="email" type="email" placeholder="youremail@email.com" required />
                                         </div>
 
                                         <div className="grid gap-2">
                                             <div className="flex items-center">
                                                 <Label className="font-dm font-bold" htmlFor="text">Message</Label>
                                             </div>
-                                            <Textarea />
+                                            <Textarea placeholder="Type your message here" />
                                         </div>
                                     </div>
                                 </form>
@@ -136,10 +136,6 @@ export const Contact = () => {
                                         Or you may send an email directly to
                                     </p>
 
-                                    {/* <a className="underline text-sm font-public gap-2 flex flex-row leading-none items-center">
-                                        marvin.masubay.042005@gmail.com
-                                        <Copy size="16" />
-                                    </a> */}
 
                                     <EmailComponent />
 
