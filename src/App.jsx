@@ -7,8 +7,11 @@ import { Footer } from "@/layout/Footer";
 import { CreativeVault } from "@/sections/CreativeProjects";
 import { Analytics } from "@vercel/analytics/react"
 import SmoothScroll from "./components/SmoothScroll";
+import { useVisitorTracker } from "@/hooks/useVisitorTracker";
 
 function App() {
+  useVisitorTracker();
+
   return (
     <div className="bg-grid min-h-dvh overflow-x-hidden">
         <Navbar className="fixed x-10" />
