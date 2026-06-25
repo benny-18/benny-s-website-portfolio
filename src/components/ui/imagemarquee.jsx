@@ -13,13 +13,15 @@ export default function ImageMarquee({
   className, 
   speed = "40s", 
   reverse = false,
-  vertical = false 
+  vertical = false,
+  onImageClick
 }) {
   
-  const Track = () => (
+  const renderTrack = (trackKey) => (
     <div 
+      key={trackKey}
       className={cn(
-        "flex flex-shrink-0 gap-2 items-center",
+        "flex flex-shrink-0 gap-2 items-center group-hover:[animation-play-state:paused]",
         vertical ? "flex-col pb-2 animate-scroll-y" : "flex-row pr-2 animate-scroll" 
       )}
       style={{ 
@@ -32,6 +34,7 @@ export default function ImageMarquee({
             variant="reverse"
             key={index}
             className="h-fit w-fit bg-transparent overflow-hidden p-0 m-2 whitespace-nowrap"
+            onClick={() => onImageClick && onImageClick(src)}
         >
             <div 
             className={cn(
@@ -60,13 +63,13 @@ export default function ImageMarquee({
   return (
     <div 
       className={cn(
-        "flex overflow-hidden select-none",
+        "flex overflow-hidden select-none group",
         vertical ? "flex-col h-full w-full" : "flex-row w-full",
         className
       )}
     >
-      <Track />
-      <Track />
+      {renderTrack('track-1')}
+      {renderTrack('track-2')}
     </div>
   );
 }

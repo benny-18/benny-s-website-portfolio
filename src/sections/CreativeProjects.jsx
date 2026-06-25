@@ -1,6 +1,8 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import ImageMarquee from "@/components/ui/imagemarquee";
 import { Button } from '@/components/ui/button';
-import { PencilRuler, Link, Instagram } from "lucide-react";
+import { PencilRuler, Link, Instagram, X } from "lucide-react";
 
 import creativework_001 from "@/assets/creative-projects/benny-portfolio-creativework-001.webp";
 import creativework_002 from "@/assets/creative-projects/benny-portfolio-creativework-002.webp";
@@ -81,7 +83,39 @@ const creativeWorksMobileSecondRow = [
 ];
 
 export const CreativeVault = () => {
-    return <section className="h-auto md:h-auto pt-16 flex bg-dotted bg-background items-start justify-center inset-shadow-sm">
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    return <section className="h-auto md:h-auto pt-16 flex bg-dotted bg-background items-start justify-center inset-shadow-sm relative">
+        <AnimatePresence>
+            {selectedImage && (
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4" 
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <Button 
+                        variant="ghost" 
+                        className="absolute top-4 right-4 text-white hover:bg-white/20 z-50 rounded-full w-12 h-12 flex items-center justify-center" 
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        <X size={32} />
+                    </Button>
+                    <motion.img 
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.95 }}
+                        transition={{ duration: 0.2 }}
+                        src={selectedImage} 
+                        className="max-w-full max-h-full object-contain rounded-md shadow-2xl" 
+                        onClick={(e) => e.stopPropagation()} 
+                    />
+                </motion.div>
+            )}
+        </AnimatePresence>
+
         <div className="flex flex-col items-center justify-end">
             <PencilRuler size={38}/>
             <h1 className="text-5xl md:text-7xl font-extrabold font-barlow uppercase leading-none pt-4 pb-4">CREATIVE VAULT</h1>
@@ -96,6 +130,7 @@ export const CreativeVault = () => {
                     speed="40s" 
                     vertical={true} 
                     className="w-1/2 h-full" 
+                    onImageClick={setSelectedImage}
                 />
 
                 <ImageMarquee 
@@ -104,6 +139,7 @@ export const CreativeVault = () => {
                     vertical={true}
                     reverse={true}
                     className="w-1/2 h-full" 
+                    onImageClick={setSelectedImage}
                 />
             </div>
 
@@ -113,17 +149,20 @@ export const CreativeVault = () => {
                     className="pb-2"
                     items={creativeWorksFirstRow} 
                     speed="50s" 
+                    onImageClick={setSelectedImage}
                 />
                 <ImageMarquee 
                     className="pb-2"
                     items={creativeWorksSecondRow} 
                     speed="50s" 
                     reverse={true}
+                    onImageClick={setSelectedImage}
                 />
                 <ImageMarquee 
                     className="pb-2"
                     items={creativeWorksThirdRow} 
                     speed="50s" 
+                    onImageClick={setSelectedImage}
                 />
 
                 <div className="w-full flex items-center justify-center pt-10">
